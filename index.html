@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Choose Your Settings</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <h1>Welcome to Snake Game</h1>
+    <h3>Designed By Rahul G.C</h3>
+    <div class="menu">
+        <h3>Choose Difficulty:</h3>
+        <button id="easyButton" onclick="setDifficulty('easy')">Easy</button>
+        <button id="mediumButton" onclick="setDifficulty('medium')">Medium</button>
+        <button id="hardButton" onclick="setDifficulty('hard')">Hard</button>
+        <h3>Choose Snake Color:</h3>
+        <input type="color" id="snakeColor" value="#2ecc71">
+        <h3>Choose Food Color:</h3>
+        <input type="color" id="foodColor" value="#e74c3c">
+        <button id="startButton" onclick="startGame()">Start Game</button>
+        <p id="errorMessage" style="color:red; display:none;">Please select difficulty of this game.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
