@@ -1,0 +1,120 @@
+:root {
+    --button-bg: #34495e;
+    --button-hover: #1abc9c;
+    --button-selected: #27ae60;
+    --button-text-color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #b8e1ec;
+    overflow: auto;
+}
+h1, p, h3 {
+    margin: 10px 0;
+    font-family: cursive;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 20px;
+    font-weight: bold;
+}
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+button.selected {
+    background-color: var(--button-selected);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+}
+#gameCanvas {
+    width: 700px;
+    height: 500px;
+}
+#snakeLength, #gameOverMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Pause and Restart Button */
+#pauseButton, #restartButton {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* Controls Section */
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Joystick Styles */
+.joystick {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.joystick-base {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joystick-handle {
+    width: 40px;
+    height: 40px;
+    background-color: #27ae60;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input {
+    border-radius: 50px;
+} 
+canvas {
+    background: #000;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #34495e;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1abc9c;
+}
